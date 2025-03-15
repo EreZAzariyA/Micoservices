@@ -1,0 +1,27 @@
+{
+  "name": "feedback-services",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec ts-node src/app.ts | bunyan"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.5",
+    "axios": "^1.8.3",
+    "bunyan": "^1.8.15",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.7",
+    "@types/bunyan": "^1.8.11",
+    "@types/express": "^5.0.0",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2"
+  }
+}

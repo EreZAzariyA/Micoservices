@@ -1,0 +1,14 @@
+FROM node:latest
+
+WORKDIR /usr/src/app
+
+COPY package.json ./
+
+RUN npm install
+ENV NODE_ENV=production
+ENV PORT=5001
+
+COPY . .
+
+EXPOSE 5001
+CMD [ "node", "js/app.js"]
